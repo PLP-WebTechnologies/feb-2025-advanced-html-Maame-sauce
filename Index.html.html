@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Index.html</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    table, th, td {
+      border: 1px solid #000;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+    table {
+      width: 100%;
+    }
+    fieldset {
+      margin-top: 20px;
+      padding: 10px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    form {
+      max-width: 500px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page Header -->
+  <header>
+    <h1>Welcome to My Web Page</h1>
+    <p>Demonstrating images, lists, tables, forms, and multimedia</p>
+  </header>
+
+  <!-- Ordered List with Roman Numerals -->
+  <section>
+    <h2>I. Task Overview</h2>
+    <ol type="I">
+      <li>Add an ordered list using Roman numerals</li>
+      <li>Embed an external image from Pexels</li>
+      <li>Create a table of 5 contacts</li>
+      <li>Design a complete registration form</li>
+      <li>Include audio and video elements</li>
+    </ol>
+  </section>
+
+  <!-- Embedded External Image from Pexels -->
+  <section>
+    <h2>II. External Image</h2>
+    <img src="https://images.pexels.com/photos/34950/pexels-photo.jpg" alt="Beautiful Landscape from Pexels">
+  </section>
+
+  <!-- Contacts Table -->
+  <section>
+    <h2>III. Contact Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name and Surname</th>
+          <th>Address</th>
+          <th>Phone</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mini Dlamini</td>
+          <td>123 Rose St, Pretoria</td>
+          <td>072 123 4567</td>
+          <td>mini.d@example.com</td>
+        </tr>
+        <tr>
+          <td>Jack Molefe</td>
+          <td>45 King St, Johannesburg</td>
+          <td>073 234 5678</td>
+          <td>jack.m@example.com</td>
+        </tr>
+        <tr>
+          <td>Thembi Nkosi</td>
+          <td>78 Pine Ave, Durban</td>
+          <td>074 345 6789</td>
+          <td>themi.n@example.com</td>
+        </tr>
+        <tr>
+          <td>Emily Zulu</td>
+          <td>22 Long Rd, Cape Town</td>
+          <td>075 456 7890</td>
+          <td>emily.z@example.com</td>
+        </tr>
+        <tr>
+          <td>Lebo Khumalo</td>
+          <td>30 Hilltop, PE</td>
+          <td>076 567 8901</td>
+          <td>lebo.k@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Registration Form -->
+  <section>
+    <h2>IV. Registration Form</h2>
+    <form action="#" method="post">
+      <!-- Text input -->
+      <label for="fullname">Full Name:</label><br>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+      <!-- Email input -->
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" placeholder="e.g. user@example.com" required><br><br>
+
+      <!-- Password input -->
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" placeholder="Minimum 6 characters" minlength="6" required><br><br>
+
+      <!-- Date input -->
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob" required><br><br>
+
+      <!-- Dropdown -->
+      <label for="course">Select Course:</label><br>
+      <select id="course" name="course" required>
+        <option value="">--Please choose--</option>
+        <option value="web">Web Development</option>
+        <option value="data">Data Analysis</option>
+        <option value="design">Graphic Design</option>
+      </select><br><br>
+
+      <!-- Radio Buttons -->
+      <fieldset>
+        <legend>Gender:</legend>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+      </fieldset><br>
+
+      <!-- Checkboxes -->
+      <fieldset>
+        <legend>Hobbies:</legend>
+        <input type="checkbox" id="reading" name="hobbies" value="Reading">
+        <label for="reading">Reading</label><br>
+
+        <input type="checkbox" id="coding" name="hobbies" value="Coding">
+        <label for="coding">Coding</label><br>
+
+        <input type="checkbox" id="music" name="hobbies" value="Music">
+        <label for="music">Music</label>
+      </fieldset><br>
+
+      <!-- Submit Button -->
+      <input type="submit" value="Register">
+    </form>
+  </section>
+
+  <!-- Multimedia Section -->
+  <section>
+    <h2>V. Multimedia</h2>
+
+    <!-- Audio -->
+    <p><strong>Sample Audio:</strong></p>
+    <audio controls>
+      <source src="dr tumi.m4a" type="audio/mp4">
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Video -->
+    <p><strong>Sample Video:</strong></p>
+    <video width="640" height="360" controls>
+      <source src="nature" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Page Footer -->
+  <footer>
+    <p>&copy; 2025 HTML5 Project by Maame Boateng. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
